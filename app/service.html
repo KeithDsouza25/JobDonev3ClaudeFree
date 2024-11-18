@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <title>JobDone.AI</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap core CSS -->
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <link rel="shortcut icon" href="images/slider-img_enhanced.png" type="">
+
+  <style>
+    /* Cart and Service Styling */
+    .service_container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .services {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .box {
+      background: #fff;
+      border: 1px solid #e8e8e8;
+      padding: 20px;
+      width: 300px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 8px;
+      text-align: center;
+    }
+    .box h5 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    .box p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 15px;
+    }
+    .price {
+      font-size: 18px;
+      font-weight: bold;
+      color: #0989ff;
+      margin-bottom: 15px;
+    }
+    .add_to_cart_button {
+      display: inline-block;
+      padding: 10px;
+      background-color: #0989ff;
+      color: white;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .add_to_cart_button:hover {
+      background-color: #087000;
+    }
+    .cart_container {
+      position: fixed;
+      top: 10%;
+      right: 5%;
+      width: 300px;
+      padding: 20px;
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: none;
+      z-index: 1000;
+      border-radius: 8px;
+    }
+    .cart_container h2 {
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: #0989ff;
+    }
+    .cart_items {
+      max-height: 200px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+    .cart_item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 0;
+      border-bottom: 1px solid #eee;
+    }
+    .cart_item h5 {
+      margin: 0;
+      font-size: 14px;
+    }
+    .cart_item span {
+      font-size: 14px;
+      color: #555;
+    }
+    .remove_button {
+      background: #ff4b4b;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      padding: 5px 10px;
+      font-size: 12px;
+      margin-left: 10px;
+    }
+    .checkout_button {
+      width: 100%;
+      padding: 10px;
+      background-color: #0989ff;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      margin-top: 10px;
+    }
+    .checkout_button:hover {
+      background-color: #087000;
+    }
+  </style>
+</head>
+
+<body class="sub_page">
+    <div class="hero_area">
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container">
+          <a class="navbar-brand" href="index.html">
+            <span>JobDone.AI</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+              <li class="nav-item active"><a class="nav-link" href="service.html">Services</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </header>
+  </div>
+  <section class="service_section layout_padding">
+    <div class="service_container container">
+      <div class="heading_container heading_center">
+        <h2><span>Services</span></h2>
+        <p>Our services provide a high success rate, using AI to ensure customer satisfaction.</p>
+      </div>
+
+      <br>
+      <h3>Profile Optimization</h3>
+      <div class="services">
+        <div class="box">
+          <h5>LinkedIn Optimization</h5>
+          <p>Optimizing LinkedIn enhances recruiter visibility, highlights skills, and strengthens your professional brand, opening doors to networking opportunities. Think of it as your corporate report card or professional “Insta” handle—a platform showcasing the value built over years of education and experience.</p><br>
+          <div class="price">₹200</div>
+          <button class="add_to_cart_button" data-price="200">Add to Cart</button>
+        </div>
+      <div class="box">
+          <h5>Naukri Optimization</h5>
+          <p>The Indian job market is dynamic, yet the leading job board has seen minimal updates over the years. LinkedIn may resemble an Instagram profile, but reaching top recruiters often requires a well-optimized Naukri profile—the equivalent of a viral post. With a strong Naukri presence, you can expect consistent daily recruiter inquiries.</p>
+          <div class="price">₹200</div>
+          <button class="add_to_cart_button" data-price="200">Add to Cart</button>
+        </div> 
+
+      </div>
+
+<br><br><br>
+      <h3>Resume Development</h3>
+      <div class="services">
+        <div class="box">
+          <h5>Interview Prediction</h5>
+          <p>Optimizing LinkedIn enhances recruiter visibility, highlights skills, and strengthens your professional brand, opening doors to networking opportunities. Think of it as your corporate report card or professional “Insta” handle—a platform showcasing the value built over years of education and experience.</p><br>
+          <div class="price">₹250</div>
+          <button class="add_to_cart_button" data-price="250">Add to Cart</button>
+        </div>
+        <div class="box">
+          <h5>Resume Building</h5>
+          <p>Gain valuable insights from seasoned professionals on effective job search strategies and best practices. Hiring managers have navigated the same challenges you’re facing—and more. The advantage you have? A supportive partner to guide you, helping turn obstacles into meaningful opportunities for long-term success.</p>
+          <div class="price">₹300</div>
+          <button class="add_to_cart_button" data-price="300">Add to Cart</button>
+        </div>
+         <div class="box">
+          <h5>Interview questions</h5>
+          <p>Gain valuable insights from seasoned professionals on effective job search strategies and best practices. Hiring managers have navigated the same challenges you’re facing—and more. The advantage you have? A supportive partner to guide you, helping turn obstacles into meaningful opportunities for long-term success.</p>
+          <div class="price">₹100</div>
+          <button class="add_to_cart_button" data-price="100">Add to Cart</button>
+        </div>
+      </div>
+
+<br><br><br>
+      <h3>Career Development</h3>
+      <div class="services">
+        <div class="box">
+          <h5>Networking Assist</h5>
+          <p>Optimizing LinkedIn enhances recruiter visibility, highlights skills, and strengthens your professional brand, opening doors to networking opportunities. Think of it as your corporate report card or professional “Insta” handle—a platform showcasing the value built over years of education and experience.</p><br>
+          <div class="price">₹550</div>
+          <button class="add_to_cart_button" data-price="550">Add to Cart</button>
+        </div>
+        <div class="box">
+          <h5>Pro Tips</h5>
+          <p>Gain valuable insights from seasoned professionals on effective job search strategies and best practices. Hiring managers have navigated the same challenges you’re facing—and more. The advantage you have? A supportive partner to guide you, helping turn obstacles into meaningful opportunities for long-term success.</p>
+          <div class="price">₹150</div>
+          <button class="add_to_cart_button" data-price="150">Add to Cart</button>
+        </div>
+</div>
+<br><br><br>
+      <h3>Bundle Services</h3>
+      <div class="services">
+        <div class="box">
+          <h5>Profile Optimization</h5>
+          <p>Optimizing LinkedIn enhances recruiter visibility, highlights skills, and strengthens your professional brand, opening doors to networking opportunities. Think of it as your corporate report card or professional “Insta” handle—a platform showcasing the value built over years of education and experience.</p><br>
+          <div class="price">₹300</div>
+          <button class="add_to_cart_button" data-price="300">Add to Cart</button>
+        </div>
+        <div class="box">
+          <h5>Resume Development</h5>
+          <p>The Indian job market is dynamic, yet the leading job board has seen minimal updates over the years. LinkedIn may resemble an Instagram profile, but reaching top recruiters often requires a well-optimized Naukri profile—the equivalent of a viral post. With a strong Naukri presence, you can expect consistent daily recruiter inquiries.</p>
+          <div class="price">₹500</div>
+          <button class="add_to_cart_button" data-price="500">Add to Cart</button>
+        </div>
+        <div class="box">
+          <h5>Career Development</h5>
+          <p>Gain valuable insights from seasoned professionals on effective job search strategies and best practices. Hiring managers have navigated the same challenges you’re facing—and more. The advantage you have? A supportive partner to guide you, helping turn obstacles into meaningful opportunities for long-term success.</p>
+          <div class="price">₹650</div>
+          <button class="add_to_cart_button" data-price="650">Add to Cart</button>
+        </div>
+      </div>
+       <div class="box">
+          <h5>The Whole Package</h5>
+          <p>Gain valuable insights from seasoned professionals on effective job search strategies and best practices. Hiring managers have navigated the same challenges you’re facing—and more. The advantage you have? A supportive partner to guide you, helping turn obstacles into meaningful opportunities for long-term success.</p>
+          <div class="price">₹1000</div>
+          <button class="add_to_cart_button" data-price="1000">Add to Cart</button>
+        </div>
+    </div>
+  </section>
+
+  <!-- Cart Section -->
+  <div id="cart" class="cart_container">
+    <h2>Your Cart</h2>
+    <div class="cart_items"></div>
+    <button class="checkout_button">Checkout</button>
+  </div>
+
+   <!-- info section -->
+
+  <section class="info_section layout_padding2">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-lg-3 info_col">
+          <div class="info_contact">
+            <h4>
+              Address
+            </h4>
+            <div class="contact_link_box">
+              <a href="">
+                <i class="fa fa-map-marker" aria-hidden="true"></i>
+                <span>
+                  Mumbai, India
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>
+                  Call +91 7304607282
+                </span>
+              </a>
+              <a href="">
+                <i class="fa fa-envelope" aria-hidden="true"></i>
+                <span>
+                  kdmusic2509@gmail.com
+                </span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-2 mx-auto info_col">
+          <div class="info_link_box">
+            <h4>
+              Links
+            </h4>
+            <div class="info_links">
+              <a class="active" href="index.html">
+                Home
+              </a>
+              <a class="" href="service.html">
+                Services
+              </a>
+              <a class="" href="about.html">
+                About us
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 info_col ">
+          <h4>
+            Subscribe
+          </h4>
+          <form action="#">
+          <div class="info_social">
+            <a href="">
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a href="">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- end info section -->
+
+
+   <!-- footer section -->
+  <section class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By VarietyWave India
+        <a href="https://html.design/"></a>
+      </p>
+    </div>
+  </section>
+  <!-- footer section -->
+
+
+  <!-- jQuery and JavaScript for Cart Functionality -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+      const cart = [];
+
+      // Add to Cart
+      $(".add_to_cart_button").click(function () {
+        const serviceTitle = $(this).siblings("h5").text();
+        const servicePrice = parseInt($(this).data("price"));
+
+        cart.push({ title: serviceTitle, price: servicePrice });
+        updateCart();
+        $("#cart").show();
+      });
+
+      // Update Cart Display
+      function updateCart() {
+        $(".cart_items").empty();
+        let totalPrice = 0;
+
+        cart.forEach((item, index) => {
+          totalPrice += item.price;
+          $(".cart_items").append(`
+            <div class="cart_item">
+              <h5>${item.title}</h5>
+              <span>₹${item.price}</span>
+              <button class="remove_button" data-index="${index}">Remove</button>
+            </div>
+          `);
+        });
+
+        $(".cart_items").append(`
+          <div class="cart_item" style="font-weight: bold;">
+            <h5>Total</h5>
+            <span>₹${totalPrice}</span>
+          </div>
+        `);
+      }
+
+      // Remove from Cart
+      $(document).on("click", ".remove_button", function () {
+        const index = $(this).data("index");
+        cart.splice(index, 1); // Remove item from cart
+        updateCart();
+
+        if (cart.length === 0) {
+          $("#cart").hide(); // Hide cart if empty
+        }
+      });
+
+      // Checkout
+      $(".checkout_button").click(function () {
+        if (cart.length > 0) {
+          let totalPrice = cart.reduce((total, item) => total + item.price, 0);
+
+          // Redirect to upi.html with total price
+          window.location.href = `upi.html?amount=${totalPrice}`;
+        } else {
+          alert("Your cart is empty!");
+        }
+      });
+    });
+  </script>
+</body>
+</html>
